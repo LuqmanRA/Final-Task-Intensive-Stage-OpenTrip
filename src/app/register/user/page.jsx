@@ -1,23 +1,34 @@
 import Link from "next/link"
+import Image from "next/image"
+import Img from "@/assets/imgregister.jpg"
+import Navbar from '@/app/components/navbar'
+import Footer from '@/app/components/footer'
 
 export default function Home() {
   return (
     <>
-      <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="text-center">
-          <p className="text-base font-semibold text-red-500">404</p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              href="/register"
-              className="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Go back home
-            </Link>
-          </div>
+      <Navbar />
+      <div className="sm:relative p-14 sm:p-0">
+        <div className="hidden sm:inline">
+          <Image src={Img} alt="gambar" width={1000} height={1000} className="w-full h-screen xl:h-auto brightness-75" />  
         </div>
-      </main>
+        <form className="space-y-4 md:space-y-6 bg-gray-50 sm:absolute lg:top-32 sm:top-24 sm:left-14 px-7 py-12 border-t-red-500 border-t-4 sm:w-96"  action="/">
+          <div>
+            <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-500">Username</label>
+            <input type="username" name="username" id="username" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 " required="" />
+          </div>
+          <div>
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-500">Password</label>
+            <input type="password" name="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 " required=""/>
+          </div>
+          <div>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500">Email</label>
+            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 " required="" />
+          </div>
+          <button type="submit" className="w-full text-white bg-red-500 hover:bg-red-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Register</button>
+        </form>
+      </div>
+      <Footer />
     </>
   )
 }

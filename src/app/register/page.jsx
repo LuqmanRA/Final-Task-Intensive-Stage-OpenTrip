@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative">
-        <div className="">
+      <div className="sm:relative p-14 sm:p-0">
+        <div className="hidden sm:inline">
           <Image src={Img} alt="gambar" width={1000} height={1000} className="w-full h-screen xl:h-auto brightness-75" />  
         </div>
-        <div className="bg-white absolute lg:top-32 top-24 sm:left-14 left-1 px-7 py-12 border-t-red-500 border-t-4">
+        <div className="bg-gray-50 sm:absolute lg:top-32 top-24 sm:left-14 left-1 px-7 py-12 border-t-red-500 border-t-4">
           <h1 className="text-gray-900 font-medium text-2xl mb-10">Choose Registration</h1> 
           <Link href="/register/user">
             <button type="button" className="w-full text-white bg-red-500 hover:bg-red-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Register as User</button> 

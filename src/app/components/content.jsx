@@ -15,7 +15,7 @@ export default function content(){
                         <p className="flex items-center gap-1"><FaStar className='text-yellow-300'/> 4.5</p>
                     </div>
             </div>
-            <Link href='#'>
+            <Link href='/destinasi/detail'>
             <div className="flex justify-center px-5 pb-3">
                     <button className="focus:outline-none text-white bg-red-500 hover:bg-red-600 font-semibold text-base w-full py-2">Pesan Sekarang</button>
             </div>

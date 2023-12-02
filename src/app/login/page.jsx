@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <>
       <section className="sm:flex">
-        <div className="px-14 py-3 sm:px-0 sm:py-0 sm:w-1/2 sm:h-screen">
+        <div className="hidden sm:inline-block sm:px-0 sm:py-0 sm:w-1/2 sm:h-screen">
           <Image src={Img} className="sm:mb-0 w-full h-full sm:h-screen brightness-75" />
         </div>
-        <div className="flex flex-col items-center justify-center mx-auto sm:h-screen">
+        <div className="flex flex-col items-center justify-center mx-auto h-screen">
           <Link
             href="/"
             className="flex items-center mb-3 text-2xl font-semibold text-gray-900 dark:text-white"
@@ -26,15 +26,15 @@ export default function Home() {
               <form className="space-y-4 md:space-y-6" action="/">
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="username"
                     className="block mb-2 text-sm font-medium text-gray-500"
                   >
                     Username
                   </label>
                   <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="username"
+                    name="username"
+                    id="username"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5 "
                     placeholder="username"
                     required=""
@@ -62,7 +62,7 @@ export default function Home() {
                 >
                   Login
                 </button>
-                <div className="flex items-center gap-5 justify-between">
+                <div className="flex items-center gap-8 sm:gap-5 justify-between">
                   <Link
                     href="#"
                     className="text-sm font-medium text-red-500 hover:underline"
