@@ -18,9 +18,6 @@ export default function card(){
                 </div>
                 <div className='flex overflow-auto sm:grid lg:grid-cols-4 sm:grid-cols-3 px-10 gap-5'>
                     <Content />
-                    <Content />
-                    <Content />
-                    <Content />
                 </div>
             </div>
             <div className='mt-14'>
@@ -35,9 +32,6 @@ export default function card(){
                     </Link>
                 </div>
                 <div className='flex overflow-auto sm:grid lg:grid-cols-4 sm:grid-cols-3 px-10 gap-5'>
-                    <Content />
-                    <Content />
-                    <Content />
                     <Content />
                 </div>
             </div>
@@ -54,9 +48,6 @@ export default function card(){
                 </div>
                 <div className='flex overflow-auto sm:grid lg:grid-cols-4 sm:grid-cols-3 px-10 gap-5'>
                     <Content />
-                    <Content />
-                    <Content />
-                    <Content />
                 </div>
             </div>
             <div className='mt-14 mb-32'>
@@ -71,9 +62,6 @@ export default function card(){
                     </Link>
                 </div>
                 <div className='flex overflow-auto sm:grid lg:grid-cols-4 sm:grid-cols-3 px-10 gap-5'>
-                    <Content />
-                    <Content />
-                    <Content />
                     <Content />
                 </div>
             </div>
