@@ -35,7 +35,7 @@ export default function Navbar() {
               href="/login"
               className="font-semibold text-red-500 sm:text-lg"
             >
-              <button>Login</button>
+              <button>halo</button>
             </Link>
           </div>
           <div className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md hidden sm:inline">
