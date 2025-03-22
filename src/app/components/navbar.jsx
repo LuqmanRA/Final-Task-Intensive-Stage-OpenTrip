@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "@/assets/logo.svg";
 
 export default function Navbar() {
@@ -7,7 +6,7 @@ export default function Navbar() {
     <div className="shadow sm:py-5 py-2 lg:px-20 px-5">
       <div className="flex justify-between items-center">
         <div className="sm:flex gap-5">
-          <Link
+          Link
             href="/"
             className="hover:underline hover:text-red-500 focus:underline font-medium sm:text-lg"
           >
