@@ -25,7 +25,7 @@ export default function Navbar() {
             src={Logo}
             width={150}
             height={150}
-            alt="Logo-image"
+            alt="Logo"
             className="w-28 sm:w-40"
           />
         </div>
